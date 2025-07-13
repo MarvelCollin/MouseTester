@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Click Tester</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h1>Mouse Click Tester</h1>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <h3>Left Clicks</h3>
+                    <span id="leftClicks">0</span>
+                </div>
+                <div class="stat-item">
+                    <h3>Right Clicks</h3>
+                    <span id="rightClicks">0</span>
+                </div>
+                <div class="stat-item">
+                    <h3>Double Clicks</h3>
+                    <span id="doubleClicks">0</span>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="resetBtn">Reset Counters</button>
+                <button id="testBtn">Test Double Click</button>
+            </div>
+
+            <div class="info">
+                <p>CPS: <span id="cps">0</span></p>
+                <p>Last click type: <span id="lastClick">None</span></p>
+            </div>
+        </div>
+
+        <div class="click-area" id="clickArea">
+            <p>Click anywhere in this area!</p>
+            <div class="click-indicator" id="clickIndicator"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
